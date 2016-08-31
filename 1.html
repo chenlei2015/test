@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jQuery.js"></script>
+    <style>
+        #mid{
+            width:400px;
+            height:400px;
+            border:1px solid black;
+        }
+    </style>
+    <script>
+        $(function(){
+            var tt= 0.5*(($(window).height()-400));
+            var l=0.5*(($(window).width()-400));
+            $('#mid').css({
+                'position':'absolute',
+                'left':l+'px',
+                'top': tt+'px'
+            })
+           $(window).scroll(function(){
+                var t= tt+($(window).scrollTop());
+                var l=0.5*(($(window).width()-400));
+                $('#mid').css({
+                    'position':'absolute',
+                    'left':l+'px',
+                    'top': t+'px'
+                })
+            })
+
+        })
+    </script>
+</head>
+<body style="position: relative">
+<div id="mid" ></div>
+<div style="height:100px;">1111</div>
+<div style="height:100px;">1112</div>
+<div style="height:100px;">1113</div>
+<div style="height:100px;">1114</div>
+<div style="height:100px;">1115</div>
+<div style="height:100px;">1111</div>
+<div style="height:100px;">1111</div>
+<div style="height:100px;">1111</div>
+<div style="height:100px;">1161</div>
+<div style="height:100px;">1111</div>
+<div style="height:100px;">1171</div>
+<div style="height:100px;">1111</div>
+<div style="height:100px;">1111</div>
+<div style="height:100px;">1118</div>
+<div style="height:100px;">1111</div>
+<div style="height:100px;">1191</div>
+<div style="height:100px;">1111</div>
+<div style="height:100px;">1111</div>
+<div style="height:100px;">1881</div>
+<div style="height:100px;">1991</div>
+<div style="height:100px;">1111</div>
+<div style="height:100px;">1222</div>
+</body>
+</html>

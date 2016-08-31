@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>2D转换</title>
+    <script src="js/jQuery.js"></script>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.6rem;
+            font-weight:800;
+        }
+        div{
+            width:20rem;
+            height:30rem;
+            border:1px solid;
+            background: red;
+            margin: 40rem;
+            /*  -webkit-transform-origin: 10rem 20rem  */;   /* 改变默认中心 */
+            /* -webkit-transform: translate(100px,100px);  */  /* 移动 */
+            /*-webkit-transform:rotate(45deg);*/  /* 以参考点(默认为中心点)旋转 */
+            /* -webkit-transform:scale(x,y); */  /* 宽高缩放倍数 */
+            /* -webkit-transform:skew(x,y); */  /* 绕xy轴倾斜角度 */
+            /* -webkit-transform:matrix(a,b,c,d,e,f); */ /* 以上四种方法的合体方法，有六个参数，包含旋转，缩放，移动（平移）和倾斜功能 */
+        }
+    </style>
+    <script>
+            /*旋转效果*/
+            function rotate(){
+                var a=Math.floor(Math.random()*360)+1800;
+                var deg=0;
+                var t=window.setInterval(function(){
+                  deg+=10;
+                  if(deg >= a){
+                      clearInterval(t);
+                  }
+                  $('#test').css('-webkit-transform','rotate('+deg+'deg)');
+                  $('#test').css('-ms-transform','rotate('+deg+'deg)');
+                  $('#test').css('-moz-transform','rotate('+deg+'deg)');
+                  $('#test').css('-o-transform','rotate('+deg+'deg)');
+            },1);   
+           }
+
+
+           /*缩小效果*/
+           var deg=0.9;
+           function scale(){                 
+                  $('#scale').css('-webkit-transform','scale('+deg+','+deg+')');
+                  $('#scale').css('-ms-transform','scale('+deg+','+deg+')');
+                  $('#scale').css('-moz-transform','scale('+deg+','+deg+')');
+                  $('#scale').css('-o-transform','scale('+deg+','+deg+')'); 
+                  deg-=0.1;
+           }
+            
+           /*倾斜效果*/
+           var deg=0;
+           var de=0;
+           function skew(){                 
+                  $('#skew').css('-webkit-transform','skew('+deg+'deg,'+de+'deg)');
+                  $('#skew').css('-ms-transform','skew('+deg+'deg,'+de+'deg)');
+                  $('#skew').css('-moz-transform','skew('+deg+'deg,'+de+'deg)');
+                  $('#skew').css('-o-transform','skew('+deg+'deg,'+de+'deg)'); 
+                  //deg+=20;
+                  de+=20;
+           }  
+    </script>
+</head>
+<body>
+    <div id="test" onclick="rotate();">
+     444444
+    </div>
+    <hr>
+    <div id="scale" onclick="scale();">
+     444444
+    </div>
+    <hr>
+    <div id="skew" onclick="skew();">
+     444444
+    </div>
+</body>
+</html>

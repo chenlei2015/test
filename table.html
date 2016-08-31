@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	table{
+		width: 500px;
+		border: 1px solid;
+		/*合并边框*/
+		border-collapse: collapse;
+	}
+	table caption{
+          font-weight: bolder;
+          font-size: 25px;
+          margin-bottom: 20px;
+	}
+	table tr td,table tr th{
+		width:100px;
+		height:40px; 
+		border: 1px solid;
+	}
+	table tr th{
+		background: #c55;
+	}
+	table tr td{
+		/*水平居中*/
+		text-align:center;
+		/*垂直居下*/
+		vertical-align: bottom;
+	}
+	table tr td[rowspan]{
+		text-align:center;
+		vertical-align:middle;
+	}
+	table tfoot tr td{
+		vertical-align:middle;
+	}
+</style>
+<body>
+	<table>
+		<colgroup>
+		    <col style="display: none;">
+		    <col span="2" style="background-color:red;">
+		    <col style="background-color:yellow;">
+	    </colgroup>
+		<caption>数据表格</caption>
+		<thead>
+			<tr><th>标题1</th><th>标题1</th><th>标题1</th><th>标题1</th><th>标题1</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>等等</td><td>等等</td><td>等等</td><td>等等</td><td>等等</td></tr>
+	        <tr><td rowspan="2">等等</td><td>等等</td><td>等等</td><td>等等</td><td>等等</td></tr>
+	        <tr><td>等等</td><td>等等</td><td>等等</td><td>等等</td></tr>
+	        <tr><td>等等</td><td>等等</td><td>等等</td><td>等等</td><td>等等</td></tr>
+		</tbody>
+        <tfoot>
+        	<tr><td colspan="5">标脚</td></tr>	
+        </tfoot>
+	</table>
+</body>
+</html>

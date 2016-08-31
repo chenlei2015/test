@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jQuery.js"></script>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.6rem;
+        }
+    </style>
+    <script>
+        $(function(){
+            $('.new').click(function(){
+                var x=0;
+                var html="<table border='1' width=170 cellspacing='0'>";
+                var obj=$(this);
+                for(var i=1;i<=6;i++){
+                    html+="<tr>";
+                    for(var j=1;j<=6;j++){
+                        x++;
+                        html+="<td>"+(x)+"</td>";
+                    }
+                    html+="</tr>";
+                }
+                html+="</table>";
+                obj.wrap('<div id="yu" style="display: inline-block;"></div>');
+                if(!obj.data('off')){
+                    obj.parent().append(html);
+                    obj.data('off',true);
+                }
+                $('#yu table td').on('click',function(){
+                    obj.val($(this).text());
+                    $(this).parent().parent().parent().remove();
+                    obj.data('off',false);
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+
+<form action="#" method="get">
+       <input class="new" type="text" name="time">
+       <input class="new" type="text" name="tim">
+       <input type="submit" value="提交">
+</form>
+</body>
+</html>

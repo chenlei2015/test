@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jQuery.js"></script>
+    <script>
+        $(function(){
+            $('form').submit(function(){
+                var num= $('#num').val();
+                var arr= num.split('|');
+                var array= arr.sort(function(a,b){return a-b});
+                array.shift();
+                var str= array.join(',');
+                $('#in').text(str);
+                return false;
+            })
+        })
+    </script>
+</head>
+<body>
+  <div id="in" style="height:200px;width:200px; border:1px solid blue"></div>
+  <form>
+      <input id="num" type="text" name="num">
+      <input type="submit">
+  </form>
+</body>
+</html>

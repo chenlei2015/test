@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jQuery.js"></script>
+    <script>
+        $(function(){
+            $('ul').append("<li class='sex'>性别</li>");
+
+            $('ul').on('click','.sex',function(){
+                alert($(this).attr('class'));
+            })
+
+            $('.name').click(function(){
+                $('ul').off('click');
+            })
+        })
+    </script>
+</head>
+<body>
+<div>
+    <ul>
+        <li class="name">姓名</li>
+        <li>年龄</li>
+    </ul>
+</div>
+</body>
+</html>

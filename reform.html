@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+	<style>
+	    form{
+	    	width: 270px;
+	    	height: 345px;
+	    	border:1px solid;
+	    }
+		table tr td{
+			/*border: 1px solid;*/
+		}
+		table tr td input.long{
+			width: 258px;
+			height: 25px;
+			outline:none;
+		}
+		table tr td input.short{
+			width: 150px;
+			height: 25px;
+			outline:none;
+		}
+		table tr.error{
+			padding: 30px;
+		}
+		table tr.error td{
+              text-align: left;
+              width: 200px;
+              height: 20px;
+              padding-left: 3px;
+              color:red;
+		}
+		table tr #verify{
+              width:87px;
+              text-align: center;
+		}
+		table tr #tel{
+			  width:87px;
+			  text-align: center;
+		}
+		table tr #button input{
+			border: 0 none;
+			width: 264px;
+			height: 35px;
+			background: red;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<form action="">
+		<table>
+			<tr>
+			<td colspan="2"><input class="long" id="user" name="user" type="text" placeholder="请输入用户名"></td>
+			</tr>
+			<tr class="error"><td colspan="3">提示信息</td></tr>
+
+			<tr>
+			<td  colspan="2"><input class="long" id="password" name="password" type="text" placeholder="请输入密码"></td>
+			</tr>
+			<tr class="error"><td colspan="3">提示信息</td></tr>
+
+			<tr>
+			<td  colspan="2"><input class="long" id="repass" name="repass" type="text" placeholder="请输入确认密码"></td>
+			</tr>
+			<tr class="error"><td colspan="3">提示信息</td></tr>
+
+            <tr>
+			<td><input  class="short" id="phone" name="phone" type="text" placeholder="请输入验证码"></td>
+			<td id="verify">验证码</td>
+			</tr>
+			<tr class="error"><td colspan="3">提示信息</td></tr>
+
+			<tr>
+			<td><input  class="short" id="phone" name="phone" type="text" placeholder="请输入手机验证码"></td>
+			<td id="tel">验证码</td>
+			</tr>
+			<tr class="error"><td colspan="3">提示信息</td></tr>
+
+			<tr><td id="button" colspan="3"><input type="submit" value="注册"></td></tr>
+		</table>
+	</form>
+</body>
+</html>

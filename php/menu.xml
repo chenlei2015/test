@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<group name="借款管理" icon="">
+	    <borrowEntity-index icon="">标的物管理</borrowEntity-index>
+		<borrowApply-index icon="">借款申请</borrowApply-index>
+		 <repayment-index>还款操作</repayment-index> 
+		 <borrow-index>借款标管理</borrow-index>
+		 <borrow-expire>近期到期借款</borrow-expire>
+		<borrow-overdue>已经过期的借款标</borrow-overdue>
+		<repayment-advance>提前还款操作</repayment-advance>
+	</group>
+	<group name="用户管理" icon="">
+		<member-index icon="">用户资料</member-index>
+		<!-- 
+		<member-message icon="">用户留言</member-message>
+		 -->
+		<score-index icon="">积分记录</score-index>
+		<coupon-index icon="">优惠券记录</coupon-index>
+        <autotender-index icon="">自动投标</autotender-index>
+		<statistics-index icon="">用户统计</statistics-index>
+		<!--<financing-index icon="">理财部业绩</financing-index>-->
+		<!-- 
+		<member-realname icon="">实名认证</member-realname>
+		<member-mobile icon="">手机认证</member-mobile>
+		<member-email icon="">邮箱认证</member-email>
+		 -->
+	</group>
+	<group name="资金管理" icon="">
+	    <finance-index icon="">资金流水</finance-index>
+	    <finance-recharge icon="">充值记录</finance-recharge>
+	    <finance-withdraw icon="">提现记录</finance-withdraw>
+		<!--<coupon-create>优惠卷创建</coupon-create>-->
+	</group>
+	<group name="系统管理" icon="">
+        <auser-index icon="">管理员管理</auser-index>
+		<!-- <group-index icon="">组权限配置</group-index> -->
+		<article-index icon="">文章管理</article-index>
+		<sms-index icon="">短信发送记录</sms-index>
+		<!-- 
+		<loginonlink-index>登录接口配置</loginonlink-index>
+		 -->
+		<banner-index>Banner设置</banner-index>
+		<config-index>全局配置</config-index>
+		<template-index>通知短信模板</template-index>
+		<!--<object-index>对象管理</object-index>-->
+	</group>
+	 
+</root>

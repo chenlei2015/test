@@ -1,0 +1,257 @@
+*{margin:0; padding:0;}
+img{border:0;}
+div,ul,lu,table,td,tr,span,h1,h2,h3,p,strong,b,em{list-style:none; padding:0; margin:0;}
+body{background:url(../images/bg.png); font-size:14px; font-family:微软雅黑, Verdana, Geneva, sans-serif; color:#555;}
+/*html *{ border:1px solid;}*/
+body{
+	background: url('../images/bgp.jpg') repeat-x;
+}
+.alink{
+	text-decoration: none;
+}
+.main{
+	width:980px;
+	margin: 0 auto;
+}
+.main01{
+	height: 30px;
+    font-size: 12px;
+}
+.main01 .left,.main01 .center,.main01 .right{
+	width:360px;
+	height:30px;
+	line-height:30px;
+	display: block;
+	float: left;
+}
+.main01 .left a,.main01 .center a,.main01 .right a{
+	display: inline-block;
+	margin: 0 5px;
+	color: #b91a12;
+	text-decoration: none;
+}
+.main01 .right{
+	width:254px;
+	height:30px;
+	line-height:30px;
+	display: block;
+	float: right;
+}
+.main02{
+	height: 174px;
+	position: relative;
+	background: url('../images/banner.jpg') center top no-repeat;
+	z-index: -9999;
+}
+.main02 a{
+	display: block;
+	position: absolute;
+	left:0px; 
+	top:33px;
+	height: 72px;
+	width: 325px;
+}
+.main03{
+	height: 74px;
+	margin-bottom: 10px;
+}
+.main03 .nav1{
+	height: 34px;
+    padding-top: 5px;
+    overflow: hidden;
+}
+.main03 .nav2{
+	height: 35px;
+    width: 960px;
+    padding-left: 20px;
+    font-size: 12px;
+}
+.main03 .nav1 li{
+	text-align: center;
+	float: left;
+	height: 34px;
+	line-height: 34px;
+	padding: 0 10px;
+		
+}
+.main03 .nav1 li a{
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+}
+.main03 .nav1 li b{
+	display: inline-block;
+	float: right;
+	width: 2px;
+	height:25px;
+	margin: 5px 0 0 20px;
+	background: url('../images/sprite.jpg')  no-repeat 0 -1636px;
+}
+.main03 .nav2 li{
+	text-align: center;
+	float: left;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 10px;
+		
+}
+.main03 .nav2 li a{
+	text-decoration: none;
+	color: #555;
+}
+.main03 .nav2 li a:hover{
+	text-decoration: none;
+	color: red;
+}
+.main04 .left{
+	float: left;
+	width:700px;
+	overflow: hidden;
+	height: 1000px;
+}
+.main04 .left .left01{
+	width:700px;
+	height:300px;
+	overflow: hidden;
+	background:url('../images/year.jpg');
+	margin-bottom: 10px;
+}
+.main04 .left .left02{
+	width:698px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.main04 .left .left02 .wrap{
+	background: url('../images/main1innerdiv.jpg') left top repeat-x;
+	position: relative;
+}
+.main04 .left .left02 .wrap .flag{
+	position: absolute;
+	width: 167px;
+    height: 111px;
+    display: block;
+    background: url('../images/sprite.jpg') 0 -293px no-repeat;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    z-index: 1;
+}
+.main04 .left .left02 .wrap h3{
+	height:50px; 
+	padding:16px 0 0 16px;
+}
+.main04 .left .left02 .wrap h3 span{
+	display: block;
+	height: 45px;
+	width: 300px;
+	background: url('../images/main1h3.jpg');
+}
+.main04 .left .left02 .wrap ul{
+	width: 698px;
+	background: url('../images/main1ulbg.png') center center no-repeat;
+	position: relative;
+	z-index: 100;
+}
+.main04 .left .left02 .wrap ul li{
+	float:left;
+	width: 312px;
+	height: 84px;
+	margin: 0 8px 15px 20px;
+	background: url('../images/main1libg.gif') center bottom no-repeat;
+	
+}
+.main04 .left .left02 .wrap ul li h4{
+	width: 36px;
+    height: 67px;
+    float: left;
+    margin-right: 8px;
+}
+.main04 .left .left02 .wrap ul li h4 a {
+    width: 16px;
+    height: 58px;
+    display: block;
+    padding: 9px 13px 0 7px;
+    font-size: 14px;
+    background: url(../images/sprite.jpg) 0 -1144px no-repeat;
+    font-size：14px;
+    color: #555;
+    text-decoration: none;
+}
+.main04 .left .left02 .wrap ul li h4 a:hover {
+	color: #da5700;
+}
+.main04 .left .left02 .wrap ul li dl{
+	width: 264px;
+    float: left;
+}
+.main04 .left .left02 .wrap ul li dl dt a{
+	height:24px;
+	line-height: 24px;
+	display: inline-block;
+	margin-right: 14px;
+	margin-left: 5px;
+	text-decoration: none;
+	color: #da5700;
+}
+.main04 .left .left02 .wrap ul li dl dt a:hover{
+	color: #e20;
+}
+.main04 .left .left02 .wrap ul li dl dd a{
+	text-decoration: none;
+	color:#555;
+	display: inline-block;
+	margin:0 5px;
+}
+.main04 .left .left02 .wrap ul li dl dd a:hover{
+	color:#da5700;
+}
+.main04 .left .left02 .wrap .searchbar{
+	width: 430px;
+    height: 33px;
+    display: block;
+    margin: 14px auto;
+}
+.main04 .left .left02 .wrap .searchbar .zoom{
+	display: block;
+	float: left;
+	width: 64px;
+	height: 33px;
+	background: url('../images/sprite.jpg') -812px -284px no-repeat;
+}
+.main04 .left .left02 .wrap .searchbar form .content{
+	width: 254px;
+	height: 33px;
+	line-height: 33px;
+	background: url('../images/sprite.jpg') -876px -284px no-repeat;
+	padding: 0 27px 0 4px;
+	border: none;
+}
+.main04 .left .left02 .wrap .searchbar form .btn{
+	width: 70px;
+	height: 33px;
+	border: none;
+	cursor:pointer;
+	background: url('../images/sprite.jpg') -1170px -284px no-repeat;
+	font-size: 14px;
+	color: #fff;
+}
+.main04 .left .left03 .wrap {
+	height: 384px;
+	background: url('../images/zjs.jpg');
+}
+.main04 .left .left03 .wrap h3 span{
+	width: 300px;
+	height: 45px;
+	background: url('../images/main2h3.png');
+}
+.main04 .right{
+	float:right;
+	width: 270px;
+	overflow: hidden;
+	height: 1000px;
+}
+.main04 .bottom{
+	clear: both;
+	height: 200px;
+}
+

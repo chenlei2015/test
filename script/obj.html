@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>对象</title>
+    <script src="../js/jQuery.js"></script>
+    <script>
+        function admin(selector,data){
+            var a=Math.floor(Math.random()*360)+data.cycle;
+            var deg=0;
+            var t=window.setInterval(function(){
+                deg+=data.step;
+                if(deg >= a){
+                    clearInterval(t);
+                }
+                  $(selector).css('-webkit-transform','rotate('+deg+'deg)');
+                  $(selector).css('-ms-transform','rotate('+deg+'deg)');
+                  $(selector).css('-moz-transform','rotate('+deg+'deg)');
+                  $(selector).css('-o-transform','rotate('+deg+'deg)');
+            },data.time);
+        }
+    </script>
+    <script>
+      window.onload=function(){
+          new admin('#num1',{cycle:1800,step:10,time:10});
+          new admin('#num2',{cycle:1800,step:10,time:10});
+      }
+    </script>
+</head>
+<body>
+ <div id="num1" style="width: 400px;height:400px;background: red;margin-top:200px;float: left;margin-right: 200px;margin-left:100px;">123</div>
+ <div id="num2" style="width: 400px;height:400px;background: green;margin-top:200px;float: left;">456</div>
+</body>
+</html>

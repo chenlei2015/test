@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/jQuery.js"></script>
+    <title></title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.6rem;
+        }
+    </style>
+    <script>
+        var  img= new Image();
+        img.src='../images/006.png';
+        $(function(){
+            var  oldimg='../images/yuan.png';
+           $("#roll").hover(function(){
+                       $('#roll img').attr('src',img.src);
+                   },
+                   function(){
+                       $('#roll img').attr('src',oldimg);
+                   })
+        })
+    </script>
+</head>
+<body>
+    <div id="roll">
+        <a href=""><img src="../images/yuan.png" alt=""></a>
+    </div>
+</body>
+</html>

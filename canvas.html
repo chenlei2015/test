@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>标签</title>
+	<meta charset="utf-8">
+	<script>	    
+	self.onload=function(){
+		var x=0;
+		var y=0;
+		var xf=true;
+		var yf=true;
+		var cx=document.getElementById('my');
+		var pc=document.getElementById('pc');
+	    var ctx=cx.getContext('2d');
+		self.setInterval(function(){
+			ctx.clearRect(x,y,300,300);  
+            //x=Math.floor(Math.random()*340);
+            //y=Math.floor(Math.random()*796);
+            if(x<=350 && xf){
+               x++;
+               if (x==350) {
+               	xf=false;
+               };
+            }else if(!xf && x<=350 ){
+            	x--;
+            	if (x==0) {
+               	xf=true;
+               };
+            }
+
+            if(y<=610 && yf){
+               y++;
+               if (y==610) {
+               	yf=false;
+               };
+            }else if(!yf && y<=610 ){
+            	y--;
+            	if (y==0) {
+               	yf=true;
+               };
+            }
+			ctx.drawImage(pc,35,75,300,300,x,y,300,300); 
+		},1);
+		
+	}		
+     </script>
+</head>
+<body>
+    <img id="pc" src="upload/008.png" style="display:none;">
+ 	<canvas id="my" width="640" height="900" style="border:1px solid #888;background:url('upload/bg.jpg');"></canvas>
+</body>
+</html>

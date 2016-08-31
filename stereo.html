@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jQuery.js"></script>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.6rem;
+        }
+        div{
+            width:20rem;
+            height: 14.5rem;
+            border:1px solid;
+            margin: 20rem;
+            background: url(images/006.png);
+            box-shadow: 1px 1px;
+            /*-webkit-backface-visibility:hidden;*/ /* Chrome and Safari */
+          /*  -webkit-transform-origin:0 0;
+            -webkit-transform: scaleX(0.5);*/
+        }
+        /* div:hover{
+            width:20rem;
+            height: 20rem;
+            -webkit-transform:rotateX(90deg);
+        } */
+    </style>
+    <script>
+     function rotate(){
+                var a=Math.floor(Math.random()*360)+1800;
+                var deg=0;
+                var t=window.setInterval(function(){
+                  deg+=10;
+                  if(deg >= a){
+                      clearInterval(t);
+                  }
+                  $('#test').css('-webkit-transform','rotateY('+deg+'deg)');
+                  $('#test').css('-ms-transform','rotateY('+deg+'deg)');
+                  $('#test').css('-moz-transform','rotateY('+deg+'deg)');
+                  $('#test').css('-o-transform','rotateY('+deg+'deg)');
+            },200);   
+           }
+    </script>
+</head>
+<body>
+    <div id="test" onclick="rotate();">123456</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>边框、盒子（手机支持）</title>
+    <style>
+        html{font-size:62.5%;}
+        body{font-size:1.6rem;}
+		.box{
+			width: 50rem;
+			height: 50rem;
+			border: 4rem solid green;
+			background: red;
+			box-shadow: 6rem 6rem 3rem 3rem #000000;
+            border-radius: 29rem;
+			border-image:url(images/border.png) 30 30 repeat;
+		}
+		.background{
+			border:1px solid;
+			padding: 30px;
+			width:50rem;
+			height:50rem;
+			/* background: url(images/005.jpg); */
+			/* background-size: 50rem 50rem; */
+			/* background-origin: content-box; */
+			background: linear-gradient(red, blue);
+		}
+    </style>
+</head>
+<body>
+    <div class="box">
+    </div>
+    <div class="background">    	
+    </div>
+</body>
+</html>
